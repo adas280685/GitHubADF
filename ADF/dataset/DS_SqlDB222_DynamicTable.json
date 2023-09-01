@@ -1,0 +1,25 @@
+{
+	"name": "DS_SqlDB222_DynamicTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Sql_SqlDB222",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

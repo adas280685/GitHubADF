@@ -1,0 +1,36 @@
+{
+	"name": "Trg",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_StorageAccount",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "target"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "column1",
+				"type": "String"
+			},
+			{
+				"name": "column2",
+				"type": "String"
+			},
+			{
+				"name": "column3",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
