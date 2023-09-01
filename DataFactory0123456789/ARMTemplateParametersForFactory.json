@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DataFactory0123456789"
+		},
+		"LS_Sql_SqlDB111_connectionString": {
+			"value": ""
+		},
+		"LS_Sql_SqlDB222_connectionString": {
+			"value": ""
+		},
+		"LS_StorageAccount_connectionString": {
+			"value": ""
+		},
+		"trigger1_properties_PL_Copyfile_Src _To_Trg_parameters_PL_FileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/b986d648-49f4-449d-b197-fa662a2b3a35/resourceGroups/RG1/providers/Microsoft.Storage/storageAccounts/storageaccount0000000"
+		}
+	}
+}
